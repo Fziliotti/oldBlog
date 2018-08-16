@@ -1,5 +1,5 @@
 {
-  "name": "cardsjekyll",
+  "name": "blogFziliotti",
   "version": "1.0.0",
   "description": "A simple template for Jekyll Blogs.",
   "main": "gulpfile.js",
@@ -15,7 +15,7 @@
     "jekyll",
     "js"
   ],
-  "author": "Willian Justen de Vasconcellos",
+  "author": "Fabrício Fernandes Ziliotti",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-stylus": "^0.4.0",
