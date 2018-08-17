@@ -2,15 +2,14 @@
 layout: post
 title: "Como eu estudo Javascript"
 date: 2015-12-04 22:43:23
-<!-- image: '/assets/img/linter/errors-list.png' -->
-description: ''
+description: 'teste'
 main-class: 'js'
 color: '#D6BA32'
 tags:
 - js
 - linter
 - tutorial
-categories:
+categories: 'nada'
 introduction: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, molestiae.'
 ---
 
