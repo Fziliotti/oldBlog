@@ -21,6 +21,7 @@ var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
 /**
  * Build the Jekyll Site
  */
+ // spawn('jekyll.bat', ['build'])
 gulp.task('jekyll-build', function (done) {
 	browserSync.notify(messages.jekyllBuild);
 	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
