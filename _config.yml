@@ -2,11 +2,11 @@
 title: Fabricio Ziliotti - Desenvolvedor Front End
 description: Blog Pessoal
 
-# baseurl: "" 
-# url: "https://fziliotti.github.io" 
+baseurl: "" 
+url: "" 
 
-baseurl: "/BlogFziliotti" 
-url: "https://fziliotti.github.io" 
+# baseurl: "/BlogFziliotti" 
+# url: "https://fziliotti.github.io" 
 
 # User settings
 username: Fabrício Ziliotti
