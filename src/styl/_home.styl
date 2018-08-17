@@ -19,15 +19,17 @@ main
     flex 1 0 300px
     margin 0 rem(15px) rem(50px)
     display inline-block
-    border 1px solid #eee
+    border 4px solid main
     border-radius 5px
     min-height rem(285px)
     transition all .3s
     position relative
     cursor: pointer
+    background-color: #111
 
     &:hover
-        box-shadow 1px 2px 10px #eee
+        opacity: 0.92
+        transform: translatey(-2px)
     a
         text-decoration none
         &:hover
@@ -36,18 +38,18 @@ main
     .box-body
         padding rem(25px)
         time
-            font-size rem(14px)
-            color #b2bac2
+            font-size rem(13px)
+            color #fff
         h2
             margin rem(5px) 0 rem(15px)
-            font-size rem(20px)
-            mainFont(800)
+            font-size rem(22px)
+            mainFont(880)
             color main
             span
                 color 
         p
             margin 0 0 rem(20px)
-            color #576366
+            color #f1f1f1
             font-size rem(14px)
             line-height rem(22px)
         .tags a

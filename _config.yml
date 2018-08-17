@@ -1,8 +1,12 @@
 # Site settings
 title: Fabricio Ziliotti - Desenvolvedor Front End
 description: Blog Pessoal
-baseurl: "/BlogFziliotti" # the subpath of your site, e.g. /blog
-url: "https://fziliotti.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# baseurl: "" 
+# url: "https://fziliotti.github.io" 
+
+baseurl: "/BlogFziliotti" 
+url: "https://fziliotti.github.io" 
 
 # User settings
 username: Fabrício Ziliotti
@@ -35,8 +39,10 @@ links:
     url: /series
   - title: Tags
     url: /tags
-  - title: About Me
+  - title: Sobre mim
     url: /about
+
+
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
