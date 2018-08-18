@@ -1,9 +1,10 @@
 {
+  "name": "blog Fabrício Ziliotti",
   "short_name": "BlogFZ",
   "display": "fullscreen",
   "background_color": "#e1e1e1",
+  "lang": "pt-BR",
   "theme_color": "#4a89c2",
-  "name": "blog Fabrício Ziliotti",
   "description": "Esse é meu blog pessoal =)",
 
   "icons": [
