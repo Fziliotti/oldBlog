@@ -1,22 +1,24 @@
 {
   "short_name": "blogFziliotti",
   "display": "fullscreen",
+  "background_color": "#fff",
+  "theme_color": "aliceblue",
   "name": "blog Fabrício Ziliotti",
-  "description": "Esse é meu blog pessoal, boa diversão!",
+  "description": "Esse é meu blog pessoal =)",
 
   "icons": [
     {
-      "src": "/assets/img/icons/launcher-icon-1x.png",
+      "src": "/assets/img/launcher-icon-1x.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "/assets/img/icons/launcher-icon-2x.png",
+      "src": "/assets/img/launcher-icon-2x.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/assets/img/icons/launcher-icon-4x.png",
+      "src": "/assets/img/launcher-icon-4x.png",
       "type": "image/png",
       "sizes": "192x192"
     }
