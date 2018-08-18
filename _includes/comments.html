@@ -1,12 +1,10 @@
-
 <section class="comments">
-    <h3>Comments</h3>
+    <h3>Comentários</h3>
     <div id="disqus_thread"></div>
 </section>
 
 <script type="text/javascript">
     var disqus_loaded = false;
-
     function load_disqus()
     {
         var disqus_config = function () {
@@ -20,10 +18,10 @@
         disqus_loaded = true;
     };
     window.onscroll = function(e) {
-        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
-            //hit bottom of page
-            if (disqus_loaded==false)
-                load_disqus()
+        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 500)) {
+            if (disqus_loaded==false) {
+                load_disqus();
+            }
         }
     };
 </script>
