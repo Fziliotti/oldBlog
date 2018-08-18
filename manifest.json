@@ -1,8 +1,8 @@
 {
-  "short_name": "blogFziliotti",
+  "short_name": "BlogFZ",
   "display": "fullscreen",
-  "background_color": "#fff",
-  "theme_color": "aliceblue",
+  "background_color": "#e1e1e1",
+  "theme_color": "#4a89c2",
   "name": "blog Fabrício Ziliotti",
   "description": "Esse é meu blog pessoal =)",
 
