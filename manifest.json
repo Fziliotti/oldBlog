@@ -1,6 +1,9 @@
 {
   "short_name": "blogFziliotti",
+  "display": "fullscreen",
   "name": "blog Fabrício Ziliotti",
+  "description": "Esse é meu blog pessoal, boa diversão!",
+
   "icons": [
     {
       "src": "/assets/img/icons/launcher-icon-1x.png",
