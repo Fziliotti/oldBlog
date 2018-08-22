@@ -2,7 +2,7 @@
   "name": "blog Fabrício Ziliotti",
   "short_name": "BlogFZ",
   "display": "fullscreen",
-  "background_color": "#e1e1e1",
+  "background_color": "#666",
   "lang": "pt-BR",
   "theme_color": "#4a89c2",
   "description": "Esse é meu blog pessoal =)",
@@ -29,5 +29,5 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "index.html"
+  "start_url": "index.html?launcher=true"
 }
