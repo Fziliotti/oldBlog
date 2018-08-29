@@ -36,14 +36,14 @@ this.addEventListener('activate', event => {
 });
 
 // EVENTO FETCH É ATIVADO TODA VEZ QUE UMA PAGINA É REQUISITADA
-this.addEventListener("fetch", event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        return response || fetch(event.request);
-      })
-      .catch(() => {
-        return caches.match('/offline.html');
-      })
-  )
-});
+// this.addEventListener("fetch", event => {
+//   event.respondWith(
+//     caches.match(event.request)
+//       .then(response => {
+//         return response || fetch(event.request);
+//       })
+//       .catch(() => {
+//         return caches.match('/offline.html');
+//       })
+//   )
+// });
