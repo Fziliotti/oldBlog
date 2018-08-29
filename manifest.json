@@ -1,12 +1,12 @@
 {
   "name": "blog Fabrício Ziliotti",
   "short_name": "BlogFZ",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#666",
   "lang": "pt-BR",
   "theme_color": "#4a89c2",
   "description": "Esse é meu blog pessoal =)",
-
+  "orientation": "any",
   "icons": [
     {
       "src": "/assets/img/launcher-icon-1x.png",
@@ -29,5 +29,5 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "index.html?launcher=true"
+  "start_url": "index.html"
 }

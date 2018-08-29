@@ -30,6 +30,17 @@ compress_html:
   endings: []
   profile: false
 
+
+files_to_cache:
+ - '/assets/js/main.js'
+
+pages_to_cache:
+  - '/cursos/'
+  - '/series/'
+  - '/about/'
+  - '/tags/'
+
+
 # Links to include in menu navigation
 # For external links add external: true
 links:
