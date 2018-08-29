@@ -6,10 +6,7 @@ const staticCacheName = 'fabricio-ziliotti-{{ site.time | date: "%Y-%m-%d-%H-%M"
 
 const filesToCache = [
 'BlogFziliotti/assets/js/main.js',
-'BlogFziliotti/cursos.html',
-'BlogFziliotti/series.html',
-'BlogFziliotti/about.html',
-'BlogFziliotti/tags.html'
+'BlogFziliotti/assets/css/main.css',
 ];
 
 // EVENTO INSTALL É ATIVADO SOMENTE UMA VEZ, QUE É QUANDO A VERSAO DO SW É REGISTRADA
