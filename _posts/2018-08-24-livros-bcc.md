@@ -5,10 +5,10 @@ title: "Livros Ciência da Computação"
 date: 2018-08-24 01:20:10
 image: '/assets/img/'
 description: "Livros importantes do curso de Bacharelado em Ciência da Computação."
-main-class: 'mix'
-color: '#D6BA32'
+main-class: dev
+color: '#B31917'
 tags:
-- util
+- jekyll
 categories: 'Utilidades'
 twitter_text:
 introduction: "Pdfs dos livros que utilizei para estudar as matérias do curso de Ciência da Computação da UFU."
