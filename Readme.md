@@ -3,7 +3,7 @@
 Esse é meu blog pessoal que ainda está em desenvolvimento.
 
 
-O que está sendo estudado e utilizado:
+### O que está sendo estudado e utilizado:
 
 - HTML5 e CSS3
 - Gulp
@@ -16,3 +16,10 @@ O que está sendo estudado e utilizado:
 - Páginas de Series 
 - Páginas Sobre Mim
 
+### Ainda falta:
+
+- Corrigir comentários
+- Criar novos temas da página inicial 
+- Melhorar a Usabilidade dos cards
+- Ajustar script para criação de posts
+- CRIAR POSTS!! - falta incentivo
