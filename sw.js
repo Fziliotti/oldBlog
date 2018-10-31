@@ -2,14 +2,21 @@
 layout: null
 ---
 
-const staticCacheName = 'fabricio-ziliotti-{{ site.time | date: "%Y-%m-%d-%H-%M" }}';;
+const staticCacheName = 'ffz-{{ site.time | date: "%Y-%m-%d-%H-%M" }}';
 
 const filesToCache = [
-'assets/js/main.js',
-'assets/css/main.css',
+  {% for page in site.pages_to_cache %}
+    '{{ page }}',
+  {% endfor %}
+  {% for post in site.posts limit: 6%}
+    '{{ post.url }}',
+  {% endfor %}
+  {% for asset in site.files_to_cache %}
+    '{{ asset }}',
+  {% endfor %}
 ];
 
-// EVENTO INSTALL É ATIVADO SOMENTE UMA VEZ, QUE É QUANDO A VERSAO DO SW É REGISTRADA
+// Cache on install
 this.addEventListener("install", event => {
   this.skipWaiting();
 
@@ -27,7 +34,7 @@ this.addEventListener('activate', event => {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames
-          .filter(cacheName => (cacheName.startsWith('fabricio-ziliotti-')))
+          .filter(cacheName => (cacheName.startsWith('ffz-')))
           .filter(cacheName => (cacheName !== staticCacheName))
           .map(cacheName => caches.delete(cacheName))
       );
@@ -35,6 +42,7 @@ this.addEventListener('activate', event => {
   );
 });
 
+// Serve from Cache
 this.addEventListener("fetch", event => {
   event.respondWith(
     caches.match(event.request)
@@ -42,7 +50,7 @@ this.addEventListener("fetch", event => {
         return response || fetch(event.request);
       })
       .catch(() => {
-        return caches.match('offline/index.html');
+        return caches.match('/offline/index.html');
       })
   )
 });
