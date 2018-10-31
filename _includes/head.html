@@ -75,6 +75,7 @@
     <meta name="theme-color" content="#74b9ff">
     <!-- MANIFEST JSON -->
     <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -82,7 +83,7 @@
 
 
     <!-- Add Service Worker -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("sw.js").then(function(registration) {
                 console.info("Service Worker registration successful with scope: ", registration.scope);
@@ -90,6 +91,6 @@
                 console.error("Service Worker registration failed: ", err);
             });
         }
-    </script>
+    </script> -->
     
 </head>
