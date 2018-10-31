@@ -1,0 +1,59 @@
+# Site settings
+title: Fabricio Ziliotti - Desenvolvedor Web
+description: Um simples blog de compartilhamento de ideias e estudos de Fabrício Ziliotti
+
+baseurl: "" 
+url: "" 
+
+# baseurl: "/BlogFziliotti" 
+# url: "https://fziliotti.github.io" 
+
+# User settings
+username: Fabrício Ziliotti
+user_description: Desenvolvedor Front-End
+email: ffz.ziliotti@gmail.com
+twitter_username: lorem_ipsum
+github_username:  Fziliotti
+gplus_username:  lorem_ipsum
+disqus_username: fabricioziliotti
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+
+files_to_cache:
+ - '/assets/js/main.js'
+
+pages_to_cache:
+  - '/cursos/'
+  - '/series/'
+  - '/about/'
+  - '/tags/'
+
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Series
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: Sobre mim
+    url: /about
+
+
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
