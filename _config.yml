@@ -39,6 +39,7 @@ pages_to_cache:
   - '/series/'
   - '/about/'
   - '/tags/'
+  - '/offline/index.html'
 
 
 # Links to include in menu navigation

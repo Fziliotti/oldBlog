@@ -6,7 +6,7 @@ layout: default
     <div id="grid" class="row flex-grid">
 
     {% for post in site.posts %}
-        <article data-aos="flip-left" class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <article data-aos="fade-left" class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
             <span class="ribbon">
                 <a href="{{site.url}}{{site.baseurl}}/category/{{post.main-class}}"><span style="color:black;">{{post.main-class}}</span></a>
             </span>
