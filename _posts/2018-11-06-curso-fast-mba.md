@@ -59,7 +59,7 @@ Um curso que achei interessante e recomendo é o [Curso Fast MBA - de André Ber
 O marketing digital é muito importante para fazer o levantamento de dados e informações, testar o Mínimo Produto Viável, entender a dor do cliente, divulgar o negócio sem grandes investimentos, educar o mercado, criar um relacionamento com os clientes e principalmente gerar vendas.
 
 ### Funil de Vendas:
-![FunilDeVendas](/assets/img/emp/funildevendas.png)
+![FunilDeVendas](/BlogFziliotti/assets/img/emp/funildevendas.png)
 
 > obs: Leads são clientes potenciais, e você deve tentar transformá-los em leads qualificados, por exemplo fazendo a "nutrição de leads", enviando emails, entrando em contato frequentemente. Dessa maneira, você terá maiores chances de transformar um lead qualificado em cliente.
 
