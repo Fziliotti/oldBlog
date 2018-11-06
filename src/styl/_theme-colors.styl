@@ -1,6 +1,6 @@
 themes = {
     post-dev: #00b894,
-    post-: #55efc4,
+    post-emp: #0E6BA8,
     post-js: #D6BA32,
     post-svg: #74b9ff,
     post-dev: #e17055,
@@ -37,7 +37,7 @@ for theme, category-color in themes
                 text-shadow 3px 3px darken(category-color, 20%)
         .bar-header
             .logo a
-                color category-color
+                color white
         .author .email,
         .author .github
             color category-color
@@ -50,9 +50,9 @@ for theme, category-color in themes
             &.search-overlay 
                 &:after
                     +below(cut)
-                        background-color category-color
+                        background-color white
         .icon-menu
-            fill category-color
+            fill white
             
         .box-body
             h2
