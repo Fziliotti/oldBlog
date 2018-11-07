@@ -8,7 +8,7 @@ description: 'Ideias e resumos de livros e cursos que realizei nos ultimos anos.
 main-class: 'emp'
 color:
 tags: 'emp'
-categories: emp
+categories: empren
 twitter_text:
 introduction: 'Ideias e resumos de livros e cursos que realizei nos ultimos anos.'
 ---
@@ -71,7 +71,7 @@ O marketing digital é muito importante para fazer o levantamento de dados e inf
 - Ligações, chats e reuniões
  
  > [O que é Marketing Digital - aprofundamento](https://marketingdeconteudo.com/marketing-digital/) 
- 
+ '
 ## Discursos e Comunicação executiva
 No mercado, você precisará ter uma boa comunicação e para isso, você pode adotar algumas técnicas para melhorar essa habilidade. Em apresentações, você pode adotar:
 
