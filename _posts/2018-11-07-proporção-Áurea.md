@@ -102,6 +102,8 @@ Proporção áurea em uma mão:
 Homem Vitruviano: 
 ![alt](/assets/img/design/propAurea20.png)
 
+A proporção áurea também era usada como um guia na obra de artistas como Salvador Dalí e de arquitetos como Le Corbusier.
+![alt](/assets/img/design/propAurea20.jpg)
 
 ## Referências
 
@@ -109,4 +111,6 @@ Homem Vitruviano:
 
 [Artigo de Patricia Camara Martins - O Número de Ouro e a Divina Proporção ](http://projetos.unioeste.br/cursos/cascavel/matematica/xxiisam/artigos/20.pdf)
 
-[Trabalho de ROSANIA MARIA QUEIROZ - RAZÃO ÁUREA: A BELEZA DE UMA RAZÃO SURPREENDENTE  ](http://www.uel.br/projetos/matessencial/superior/pde/rosania-razao-aurea.pdf)
+[Trabalho de Rosania Maria Queiroz - RAZÃO ÁUREA: A BELEZA DE UMA RAZÃO SURPREENDENTE  ](http://www.uel.br/projetos/matessencial/superior/pde/rosania-razao-aurea.pdf)
+
+[Publicação de Felipe Ventura no gizmodo - Os mitos e verdades sobre a proporção áurea](https://gizmodo.uol.com.br/mitos-proporcao-aurea/)
