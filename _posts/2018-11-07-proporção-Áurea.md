@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Proporção Áurea"
 date: 2018-11-07 21:52:20
-image: '/assets/img/'
+image: '/BlogFziliotti/assets/img/'
 description: 'Proporção da matemática muito famosa presente em logomarcas, pinturas, esculturas e até mesmo na natureza.'
 main-class: dsgn
 color:
@@ -22,11 +22,11 @@ Resolvi criar um post sobre esse tema que venho pesquisando a alguns dias e ache
 Proporção áurea, número de ouro, número áureo, secção áurea, proporção de ouro é uma constante real algébrica irracional denotada pela letra grega phi (ϕ), em homenagem ao escultor Phideas.
 Ela é considerada a mais agradável proporção entre duas medidas e foi descoberta pelo matemático Euclides há 2.300 anos, na Grécia Antiga.
 
-![alt](/assets/img/design/propAurea.png)
+![alt](/BlogFziliotti/assets/img/design/propAurea.png)
 
 Para se chegar nesse valor de **1.618033987**, basta fazer um simples cálculo de proporção. Como o da figura abaixo encontrada no pinterest:
 
-![alt](/assets/img/design/calculoPropAurea.jpg)
+![alt](/BlogFziliotti/assets/img/design/calculoPropAurea.jpg)
 
 Os gregos antigos a designavam como:
 > “A divisão de um segmento em média e extrema razão” 
@@ -68,42 +68,42 @@ termos sucessivos quaisquer dessa sequência tende a ϕ como limite, à medida q
 Já ficou convencido? Pode ir testando com os próximos números da sequência haha
 
 Uma representação mais visual:
-![alt](/assets/img/design/propAurea18.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea18.jpg)
 
 
 ## Presença na Natureza
 
-![alt](/assets/img/design/propAurea01.jpg)
-![alt](/assets/img/design/propAurea02.jpg)
-![alt](/assets/img/design/propAurea03.jpg)
-![alt](/assets/img/design/propAurea04.jpg)
-![alt](/assets/img/design/propAurea05.jpg)
-![alt](/assets/img/design/propAurea06.jpg)
-![alt](/assets/img/design/propAurea07.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea01.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea02.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea03.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea04.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea05.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea06.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea07.jpg)
 
 
 ## Presença em logomarcas
 
-![alt](/assets/img/design/propAurea10.jpg)
-![alt](/assets/img/design/propAurea11.jpg)
-![alt](/assets/img/design/propAurea12.jpg)
-![alt](/assets/img/design/propAurea15.png)
-<!-- ![alt](/assets/img/design/propAurea14.png)
-![alt](/assets/img/design/propAurea13.png)
-![alt](/assets/img/design/propAurea16.png) -->
+![alt](/BlogFziliotti/assets/img/design/propAurea10.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea11.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea12.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea15.png)
+<!-- ![alt](/BlogFziliotti/assets/img/design/propAurea14.png)
+![alt](/BlogFziliotti/assets/img/design/propAurea13.png)
+![alt](/BlogFziliotti/assets/img/design/propAurea16.png) -->
 
 
 
 ## Outros Exemplos
 Triangulo de Pascal:
-![Triangulo de Pascal](/assets/img/design/propAurea17.png)
+![Triangulo de Pascal](/BlogFziliotti/assets/img/design/propAurea17.png)
 Proporção áurea em uma mão:
-![alt](/assets/img/design/propAurea19.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea19.jpg)
 Homem Vitruviano: 
-![alt](/assets/img/design/propAurea20.png)
+![alt](/BlogFziliotti/assets/img/design/propAurea20.png)
 
 A proporção áurea também era usada como um guia na obra de artistas como Salvador Dalí e de arquitetos como Le Corbusier.
-![alt](/assets/img/design/propAurea20.jpg)
+![alt](/BlogFziliotti/assets/img/design/propAurea20.jpg)
 
 ## Referências
 
