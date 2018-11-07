@@ -19,8 +19,8 @@ Resolvi criar um post sobre esse tema que venho pesquisando a alguns dias e ache
  
 
 ## Introdução
-Proporção áurea, número de ouro, número áureo, secção áurea, proporção de ouro é uma constante real algébrica irracional denotada pela letra grega phi(ϕ), em homenagem ao escultor Phideas.
-Ela é considerada a mais agradável proporção entre duas medidas. 
+Proporção áurea, número de ouro, número áureo, secção áurea, proporção de ouro é uma constante real algébrica irracional denotada pela letra grega phi (ϕ), em homenagem ao escultor Phideas.
+Ela é considerada a mais agradável proporção entre duas medidas e foi descoberta pelo matemático Euclides há 2.300 anos, na Grécia Antiga.
 
 ![alt](/assets/img/design/propAurea.png)
 
@@ -67,6 +67,9 @@ termos sucessivos quaisquer dessa sequência tende a ϕ como limite, à medida q
 
 Já ficou convencido? Pode ir testando com os próximos números da sequência haha
 
+Uma representação mais visual:
+![alt](/assets/img/design/propAurea18.jpg)
+
 
 ## Presença na Natureza
 
@@ -85,16 +88,18 @@ Já ficou convencido? Pode ir testando com os próximos números da sequência h
 ![alt](/assets/img/design/propAurea11.jpg)
 ![alt](/assets/img/design/propAurea12.jpg)
 ![alt](/assets/img/design/propAurea15.png)
-![alt](/assets/img/design/propAurea14.png)
+<!-- ![alt](/assets/img/design/propAurea14.png)
 ![alt](/assets/img/design/propAurea13.png)
-![alt](/assets/img/design/propAurea16.png)
+![alt](/assets/img/design/propAurea16.png) -->
 
 
 
 ## Outros Exemplos
+Triangulo de Pascal:
 ![Triangulo de Pascal](/assets/img/design/propAurea17.png)
-![alt](/assets/img/design/propAurea18.jpg)
+Proporção áurea em uma mão:
 ![alt](/assets/img/design/propAurea19.jpg)
+Homem Vitruviano: 
 ![alt](/assets/img/design/propAurea20.png)
 
 
