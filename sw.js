@@ -1,4 +1,9 @@
-let versao = 1
+
+---
+layout: null
+---
+
+const staticCacheName = 'willian-justen-{{ site.time | date: "%Y-%m-%d-%H-%M" }}';
 
 const filesToCache = [
   '/BlogFziliotti/cursos/',
@@ -11,32 +16,41 @@ const filesToCache = [
   '/BlogFziliotti/assets/js/main.js',
 ];
 
-self.addEventListener("install", function(){
-  console.log("Instalou service worker!")
-})
+// Cache on install
+this.addEventListener("install", event => {
+  this.skipWaiting();
 
-self.addEventListener("activate", function(){
-  caches.open("blog-arquivos-" + versao).then(cache => {
-      cache.addAll(arquivos)
-          .then(function(){
-              caches.delete("blog-arquivos-" + (versao - 1 ))   
-              caches.delete("blog-arquivos")   
-          })
-      
-  })
-})
+  event.waitUntil(
+    caches.open(staticCacheName)
+      .then(cache => {
+        return cache.addAll(filesToCache);
+    })
+  )
+});
 
+// Clear cache on activate
+this.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames
+          .filter(cacheName => (cacheName.startsWith('willian-justen-')))
+          .filter(cacheName => (cacheName !== staticCacheName))
+          .map(cacheName => caches.delete(cacheName))
+      );
+    })
+  );
+});
 
-self.addEventListener("fetch", function(event){
-
-  let pedido = event.request
-  let promiseResposta = caches.match(pedido).then(respostaCache => {
-      let resposta = respostaCache ? respostaCache : fetch(pedido)
-      return resposta
-  })
-
-  event.respondWith(promiseResposta)
-
-})
-
-
+// Serve from Cache
+this.addEventListener("fetch", event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        return response || fetch(event.request);
+      })
+      .catch(() => {
+        return caches.match('/offline/index.html');
+      })
+  )
+});
