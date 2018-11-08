@@ -1,9 +1,9 @@
 themes = {
-    post-emp: #D6BA32
-    post-dsgn: #0E6BA8
-    post-js: #D6BA32
-    post-svg: #74b9ff
-    post-dev: #e17055
+    post-emp: #D6BA32,
+    post-dsgn: #0E6BA8,
+    post-js: #D6BA32,
+    post-svg: #74b9ff,
+    post-dev: #e17055,
     post-html: #a29bfe
 }
 
@@ -38,22 +38,23 @@ for theme, category-color in themes
         .bar-header
             .logo a
                 color white
-        .author .email,
-        .author .github
+        .author .email
             color category-color
 
         .share a
             &:hover svg
                 fill category-color
-                
+
         body
-            &.search-overlay 
+            &.search-overlay
                 &:after
                     +below(cut)
-                        background-color white
+                        background-color category-color
         .icon-menu
             fill white
-            
+        .cursos-menu
+            color category-color
+
         .box-body
             h2
                 color category-color
@@ -63,6 +64,8 @@ for theme, category-color in themes
                 &:hover
                     color: #fff
                     background: category-color
+        .related-post a
+            color category-color
         aside
             background-color category-color
             nav li a:hover
