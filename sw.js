@@ -1,4 +1,4 @@
-var versao = 8
+var versao = 9
 
 const filesToCache = [
   '/BlogFziliotti/',
