@@ -6,9 +6,9 @@ date: 2018-11-06 03:08:00
 image: '/assets/img/'
 description: 'Ideias e resumos de livros e cursos que realizei nos ultimos anos.'
 main-class: 'emp'
-color:
+color: '#EB7728'
 tags: 'emp'
-categories: empren
+categories: 
 twitter_text:
 introduction: 'Ideias e resumos de livros e cursos que realizei nos ultimos anos.'
 ---
