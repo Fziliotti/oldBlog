@@ -3,6 +3,27 @@ body
 	height 100%
 	background-color: #545454
 
+
+// barra de rolagem padrão
+::-webkit-scrollbar 
+    width: 0.5rem
+    height: 10px
+
+// Are do caminho que a barra vai percorrer
+::-webkit-scrollbar-track-piece 
+    background-color: #ffffff
+
+// Responsável por editar como será a scrollbar na vertical do site;
+::-webkit-scrollbar-thumb:vertical 
+    height: 4px
+    background-color: #4A89C2
+
+// Personaliza a barra que ao invés de ser na vertical, é na horizontal.
+::-webkit-scrollbar-thumb:horizontal 
+    width: 4px
+    background-color: #4A89C2
+
+
 $bg
 	.content
 		width 95%
@@ -70,23 +91,5 @@ $bg
 
 
 		
-// barra de rolagem padrão
-::-webkit-scrollbar 
-    width: 0.5rem
-    height: 10px
-
-// Are do caminho que a barra vai percorrer
-::-webkit-scrollbar-track-piece 
-    background-color: #ffffff
-
-// Responsável por editar como será a scrollbar na vertical do site;
-::-webkit-scrollbar-thumb:vertical 
-    height: 4px;
-    background-color: #4A89C2
-
-// Personaliza a barra que ao invés de ser na vertical, é na horizontal.
-::-webkit-scrollbar-thumb:horizontal 
-    width: 4px;
-    background-color: #4A89C2
 
  

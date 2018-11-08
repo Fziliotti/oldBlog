@@ -5,7 +5,7 @@ title: "Proporção Áurea"
 date: 2018-11-07 21:52:20
 image: '/BlogFziliotti/assets/img/'
 description: 'Proporção da matemática muito famosa presente em logomarcas, pinturas, esculturas e até mesmo na natureza.'
-main-class: dsgn
+main-class: 'dsgn'
 color: '#EB7728'
 tags: ['design', 'matemática']
 categories:
