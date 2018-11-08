@@ -1,14 +1,14 @@
 let versao = 1
 
 const filesToCache = [
-  '/BlogFziliotti/cursos/',
-  '/BlogFziliotti/series/',
-  '/BlogFziliotti/about/',
-  '/BlogFziliotti/tags/',
-  '/BlogFziliotti/offline/index.html',
-  '/BlogFziliotti/proporção-Áurea/',
-  '/BlogFziliotti/curso-fast-mba/',
-  '/BlogFziliotti/assets/js/main.js',
+  '/cursos/',
+  '/series/',
+  '/about/',
+  '/tags/',
+  '/offline/index.html',
+  '/proporção-Áurea/',
+  '/curso-fast-mba/',
+  '/assets/js/main.js',
 ];
 
 self.addEventListener("install", function(){

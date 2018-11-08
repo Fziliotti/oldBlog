@@ -19,11 +19,6 @@
       "sizes": "96x96"
     },
     {
-      "src": "/assets/img/launcher-icon-4x.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
       "src": "/assets/img/launcher-icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
