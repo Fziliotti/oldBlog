@@ -5,7 +5,7 @@ title: "CriandoPostTeste"
 date: 2018-08-15 23:43:55
 image: '/assets/img/'
 description: Primeiro Post Criado
-main-class: dev
+main-class: 'dev'
 color: #f00
 tags: tagTeste
 categories: "Testando"

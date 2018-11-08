@@ -1,56 +1,42 @@
----
-layout: null
----
-
-const staticCacheName = 'ffz-{{ site.time | date: "%Y-%m-%d-%H-%M" }}';
+let versao = 1
 
 const filesToCache = [
-  {% for page in site.pages_to_cache %}
-    '{{ page }}',
-  {% endfor %}
-  {% for post in site.posts limit: 6 %}
-    '{{ post.url }}',
-  {% endfor %}
-  {% for asset in site.files_to_cache %}
-    '{{ asset }}',
-  {% endfor %}
+  '/BlogFziliotti/cursos/',
+  '/BlogFziliotti/series/',
+  '/BlogFziliotti/about/',
+  '/BlogFziliotti/tags/',
+  '/BlogFziliotti/offline/index.html',
+  '/BlogFziliotti/proporção-Áurea/',
+  '/BlogFziliotti/curso-fast-mba/',
+  '/BlogFziliotti/assets/js/main.js',
 ];
 
-// Cache on install
-this.addEventListener("install", event => {
-  this.skipWaiting();
+self.addEventListener("install", function(){
+  console.log("Instalou service worker!")
+})
 
-  event.waitUntil(
-    caches.open(staticCacheName)
-      .then(cache => {
-        return cache.addAll(filesToCache);
-    })
-  )
-});
+self.addEventListener("activate", function(){
+  caches.open("blog-arquivos-" + versao).then(cache => {
+      cache.addAll(arquivos)
+          .then(function(){
+              caches.delete("blog-arquivos-" + (versao - 1 ))   
+              caches.delete("blog-arquivos")   
+          })
+      
+  })
+})
 
-// Clear cache on activate
-this.addEventListener('activate', event => {
-  event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames
-          .filter(cacheName => (cacheName.startsWith('ffz-')))
-          .filter(cacheName => (cacheName !== staticCacheName))
-          .map(cacheName => caches.delete(cacheName))
-      );
-    })
-  );
-});
 
-// Serve from Cache
-this.addEventListener("fetch", event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        return response || fetch(event.request);
-      })
-      .catch(() => {
-        return caches.match('/offline/index.html');
-      })
-  )
-});
+self.addEventListener("fetch", function(event){
+
+  let pedido = event.request
+  let promiseResposta = caches.match(pedido).then(respostaCache => {
+      let resposta = respostaCache ? respostaCache : fetch(pedido)
+      return resposta
+  })
+
+  event.respondWith(promiseResposta)
+
+})
+
+
