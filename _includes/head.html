@@ -39,15 +39,15 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{site.baseurl}}/assets/img/icons/favicon.ico" type="image/x-icon" />
     <!-- Apple Touch Iconggits -->
-    <link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" href="{{site.baseurl}}/assets/img/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{site.baseurl}}/assets/img/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{site.baseurl}}/assets/img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{site.baseurl}}/assets/img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{site.baseurl}}/assets/img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{{site.baseurl}}/assets/img/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{site.baseurl}}/assets/img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{site.baseurl}}/assets/img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{site.baseurl}}/assets/img/icons/apple-touch-icon-152x152.png" />
     <!-- Windows 8 Tile Icons -->
     <meta name="application-name" content="{{site.username}} Blog">
     <meta name="msapplication-TileColor" content="#0562DC">
@@ -58,23 +58,23 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="assets/img/launcher-icon-4x.png">
+    <link rel="icon" sizes="192x192" href="{{site.baseurl}}assets/img/launcher-icon-4x.png">
     <meta name="theme-color" content="#74b9ff">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="BlogFziliotti">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-icon-precomposed" href="assets/img/launcher-icon-4x.png">
+    <link rel="apple-touch-icon-precomposed" href="{{site.baseurl}}assets/img/launcher-icon-4x.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="assets/img/launcher-icon-4x.png">
+    <meta name="msapplication-TileImage" content="{{site.baseurl}}assets/img/launcher-icon-4x.png">
     <meta name="msapplication-TileColor" content="#74b9ff">
 
     <!-- Android Lolipop Theme Color -->
     <meta name="theme-color" content="#74b9ff">
     <!-- MANIFEST JSON -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="{{site.baseurl}}/manifest.json">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -84,7 +84,7 @@
    <!-- Add Service Worker -->
    <script type="text/javascript">
     if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("BlogFziliotti/sw.js").then(function(registration) {
+        navigator.serviceWorker.register("{{site.baseurl}}/sw.js").then(function(registration) {
             console.info("Service Worker registration successful with scope: ", registration.scope);
         }).catch(function(err) {
             console.error("Service Worker registration failed: ", err);
