@@ -18,8 +18,6 @@ Esse é meu blog pessoal que ainda está em desenvolvimento.
 
 ### Ainda falta:
 
-- Corrigir comentários
 - Criar novos temas da página inicial 
 - Melhorar a Usabilidade dos cards
 - Ajustar script para criação de posts
-- CRIAR POSTS!! - falta incentivo
