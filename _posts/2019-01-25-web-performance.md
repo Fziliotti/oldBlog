@@ -78,6 +78,11 @@ introduction: 'Conjunto de regras e técnicas que utilizo para melhorar a perfor
     - **L** oad (First Meaningful Paint o mais rápido possível)
 15. **Usar a técnica Code Splitting:** Isso significa que você deve enviar o que a pessoa precisa apenas quando ela precisa. Isso é feito através de Dynamic Importing.
 16. **Remover o CSS não utilizado:** Essa é legal👌. Você pode utilizar a ferramenta [UnCSS](https://github.com/uncss/uncss) para remover os seletores CSS que não são utilizados.
+    Resumindo funcionamento do UNCSS:
+    - Os arquivos HTML são carregados pelo jsdom e o JavaScript é executado.
+    - Todas as folhas de estilo são analisadas pelo PostCSS.
+    - document.querySelector filtra os seletores que não são encontrados nos arquivos HTML.
+    - As regras restantes são convertidas de volta para CSS.
 17. **Web Fonts:** Estudar WebFonts e compreender o impacto que o carregamento de fontes tem em sua aplicação web.
     - Esse cara é muito fera e ja publicou diversos artigos sobre o tema, dê uma lida que vale a pena -> [site do Zach](https://www.zachleat.com/web/fonts/)
 18. **Lazy Load de Imagens:** Segundo um post de Rahul NanWani [aqui](https://imagekit.io/blog/lazy-loading-images-complete-guide/), "A ideia básica de carregamento lento é simples - adiar o carregamento de qualquer coisa que não seja necessária no momento. Para imagens, isso geralmente se traduz em qualquer imagem que não seja visível para o usuário na frente, pode ser carregada com preguiça. À medida que o usuário rola a página, os placeholders de imagem começam a entrar na viewport (parte visível da página da Web). Acionamos a carga dessas imagens quando elas se tornam visíveis."
