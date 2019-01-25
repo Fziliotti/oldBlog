@@ -1,16 +1,16 @@
 ---
 layout: post
 comments: true
-title: "Empreendedorismo"
+title: "Resumo do curso FAST MBA"
 date: 2018-11-06 03:08:00
 image: '/assets/img/'
-description: 'Ideias e resumos de livros e cursos que realizei nos ultimos anos.'
+description: 'Principais conceitos e dicas que aprendi fazendo o curso Fast MBA'
 main-class: 'emp'
 color: 'emp'
 tags: 'emp'
 categories: 
 twitter_text:
-introduction: 'Ideias e resumos de livros e cursos que realizei nos ultimos anos.'
+introduction: 'Principais conceitos e dicas que aprendi fazendo o curso Fast MBA'
 ---
 
 ## Introdução
@@ -19,8 +19,6 @@ introduction: 'Ideias e resumos de livros e cursos que realizei nos ultimos anos
 
 Resolvi criar um post sobre empreendedorismo para compartilhar algumas ideias e resumir um pouco do que aprendi ao longo desse tempo lendo alguns livros e fazendo alguns cursos relacionados a esse tema.
 Um curso que achei interessante e recomendo é o [Curso Fast MBA - de André Bernardo ](https://www.udemy.com/fast-mba/)
-
-
 
 
 ## Alguns mitos sobre Empreendedorismo
