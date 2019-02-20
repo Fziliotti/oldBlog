@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Frases motivacionais de Empreendedorismo"
+title: "Frases aleatórias sobre Empreendedorismo"
 date: 2019-01-23 06:00:27
 image: '/assets/img/'
 description: 'Conjunto de frases e pensamentos sobre o tema que foram adquiridas após leitura e visualização de vídeos'
