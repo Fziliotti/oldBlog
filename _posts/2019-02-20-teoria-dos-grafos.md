@@ -33,8 +33,8 @@ Inicialmente criamos um grafo teste com o intuito de facilitar o desenvolvimento
 
 ### Estrutura de pastas do projeto
 
-![alt](/assets/img/comp/tg2.png)
+![alt](/BlogFziliotti/assets/img/comp/tg2.png)
 
 # Resultado Final
 
-![alt](/assets/img/comp/tg3.png)
+![alt](/BlogFziliotti/assets/img/comp/tg3.png)
