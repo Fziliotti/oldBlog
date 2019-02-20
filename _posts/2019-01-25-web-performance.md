@@ -19,14 +19,14 @@ introduction: 'Conjunto de regras e técnicas que utilizo para melhorar a perfor
 ## Dicas simples e rápidas
 
 1. **System Font Stack:** Uma boa estratégia de Font-Loading é não carregar nenhuma fonte, Utilizando as fontes nativas como a Roboto para Android, Ubuntu para Linux, Segoe UI para Windows..
-```css
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Ubuntu",
-    "Helvetica Neue", "sans-serif";
-}
+    ```css
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Ubuntu",
+        "Helvetica Neue", "sans-serif";
+    }
 
-```
+    ```
 2. **Conhecer e compreender as métricas:** Conheça as métricas de performance, como FCP, FMP, TTI, FID e outras siglas importantes. 
    - [Saiba mais sobre as métricas de renderização](https://speedcurve.com/blog/rendering-metrics/)
    - [Referências de auditoria do LightHouse](https://developers.google.com/web/tools/lighthouse/audits/)
@@ -52,108 +52,107 @@ body {
 11. **Compreender e testar a usabilidade em vários dispositivos:** Além de verificar se seu site está responsivo como fazemos no front-end, devemos lembrar que a performance dele varia muito de celular para celular. Por exemplo, o processamento do javascript em um celular mediano pode ser varias vezes MENOR que em celulares mais atuais e caros.
 12. **Deferir o CSS não usado ou não principal:** Carregue o css mais importante primeiro e depois carregue o css não utilizado frequentemente.
     - [Como realizar o deferimento?](https://developers.google.com/web/tools/lighthouse/audits/unused-css)
-  
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-    /* Critical CSS here. */
-    </style>
-    ...
-</head>
-</html>
-```
-
-1.  **Utilize plugins e sistemas de auditoria para verificação da performance:**
+    
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        /* Critical CSS here. */
+        </style>
+        ...
+    </head>
+    </html>
+    ```
+13. **Utilize plugins e sistemas de auditoria para verificação da performance:**
     Eles vão facilitar a sua vida na hora de verificar a performance do seu site, verificar se você não deixou nada de fora e aprender mais sobre Web Performance. 😉😉
     - [LightHouse](https://developers.google.com/web/tools/lighthouse/)
     - [WepPage Test](https://www.webpagetest.org/)
     - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
     - [GTMetrix](https://gtmetrix.com/)
-2.  **Modelo RAIL de performance:** Ultimamente estou dando uma estudada nesse modelo para melhorar a Experiência do Usuário em meus sites e pequenos projeto, pode ser uma boa para você também! 😃
+14. **Modelo RAIL de performance:** Ultimamente estou dando uma estudada nesse modelo para melhorar a Experiência do Usuário em meus sites e pequenos projeto, pode ser uma boa para você também! 😃
     Resumidamente:
     - **R** esponse (Tempo de resposta em menos 100ms)
     - **A** nimation (60fps = 16ms por frame)
     - **I** dle (estado intermediário, blocos de 50ms)
     - **L** oad (First Meaningful Paint o mais rápido possível)
-3.  **Usar a técnica Code Splitting:** Isso significa que você deve enviar o que a pessoa precisa apenas quando ela precisa. Isso é feito através de Dynamic Importing.
-4.  **Remover o CSS não utilizado:** Essa é legal👌. Você pode utilizar a ferramenta [UnCSS](https://github.com/uncss/uncss) para remover os seletores CSS que não são utilizados.
+15. **Usar a técnica Code Splitting:** Isso significa que você deve enviar o que a pessoa precisa apenas quando ela precisa. Isso é feito através de Dynamic Importing.
+16. **Remover o CSS não utilizado:** Essa é legal👌. Você pode utilizar a ferramenta [UnCSS](https://github.com/uncss/uncss) para remover os seletores CSS que não são utilizados.
     Resumindo funcionamento do UNCSS:
     - Os arquivos HTML são carregados pelo jsdom e o JavaScript é executado.
     - Todas as folhas de estilo são analisadas pelo PostCSS.
     - document.querySelector filtra os seletores que não são encontrados nos arquivos HTML.
     - As regras restantes são convertidas de volta para CSS.
-5.  **Web Fonts:** Estudar WebFonts e compreender o impacto que o carregamento de fontes tem em sua aplicação web.
+17. **Web Fonts:** Estudar WebFonts e compreender o impacto que o carregamento de fontes tem em sua aplicação web.
     - Esse cara é muito fera e ja publicou diversos artigos sobre o tema, dê uma lida que vale a pena -> [site do Zach](https://www.zachleat.com/web/fonts/)
-6.  **Lazy Load de Imagens:** Segundo um post de Rahul NanWani [aqui](https://imagekit.io/blog/lazy-loading-images-complete-guide/), "A ideia básica de carregamento lento é simples - adiar o carregamento de qualquer coisa que não seja necessária no momento. Para imagens, isso geralmente se traduz em qualquer imagem que não seja visível para o usuário na frente, pode ser carregada com preguiça. À medida que o usuário rola a página, os placeholders de imagem começam a entrar na viewport (parte visível da página da Web). Acionamos a carga dessas imagens quando elas se tornam visíveis."
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-        }
-        img {
-            background: #F1F1FA;
-            width: 400px;
-            height: 300px;
-            display: block;
-            margin: 10px auto;
-            border: 0;
-        }
-    </style>
-</head>
+18. **Lazy Load de Imagens:** Segundo um post de Rahul NanWani [aqui](https://imagekit.io/blog/lazy-loading-images-complete-guide/), "A ideia básica de carregamento lento é simples - adiar o carregamento de qualquer coisa que não seja necessária no momento. Para imagens, isso geralmente se traduz em qualquer imagem que não seja visível para o usuário na frente, pode ser carregada com preguiça. À medida que o usuário rola a página, os placeholders de imagem começam a entrar na viewport (parte visível da página da Web). Acionamos a carga dessas imagens quando elas se tornam visíveis."
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+            img {
+                background: #F1F1FA;
+                width: 400px;
+                height: 300px;
+                display: block;
+                margin: 10px auto;
+                border: 0;
+            }
+        </style>
+    </head>
 
-<body>
-    <img src="https://ik.imagekit.io/demo/img/image1.jpeg?tr=w-400,h-300" />
-    <img src="https://ik.imagekit.io/demo/img/image2.jpeg?tr=w-400,h-300" />
-    <img src="https://ik.imagekit.io/demo/img/image3.jpg?tr=w-400,h-300" />
-    <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-400,h-300" />
-    <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image5.jpeg?tr=w-400,h-300" />
-    <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image6.jpeg?tr=w-400,h-300" />
-    <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image7.jpeg?tr=w-400,h-300" />
-    <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image8.jpeg?tr=w-400,h-300" />
-    <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image9.jpeg?tr=w-400,h-300" />
-    <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image10.jpeg?tr=w-400,h-300" />
-    <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-400,h-300" />
-    <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image5.jpeg?tr=w-400,h-300" />
-    <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image6.jpeg?tr=w-400,h-300" />
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var lazyloadImages = document.querySelectorAll("img.lazy");
-            var lazyloadThrottleTimeout;
+    <body>
+        <img src="https://ik.imagekit.io/demo/img/image1.jpeg?tr=w-400,h-300" />
+        <img src="https://ik.imagekit.io/demo/img/image2.jpeg?tr=w-400,h-300" />
+        <img src="https://ik.imagekit.io/demo/img/image3.jpg?tr=w-400,h-300" />
+        <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-400,h-300" />
+        <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image5.jpeg?tr=w-400,h-300" />
+        <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image6.jpeg?tr=w-400,h-300" />
+        <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image7.jpeg?tr=w-400,h-300" />
+        <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image8.jpeg?tr=w-400,h-300" />
+        <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image9.jpeg?tr=w-400,h-300" />
+        <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image10.jpeg?tr=w-400,h-300" />
+        <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-400,h-300" />
+        <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image5.jpeg?tr=w-400,h-300" />
+        <img class="lazy" data-src="https://ik.imagekit.io/demo/img/image6.jpeg?tr=w-400,h-300" />
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var lazyloadImages = document.querySelectorAll("img.lazy");
+                var lazyloadThrottleTimeout;
 
-            function lazyload() {
-                if (lazyloadThrottleTimeout) {
-                    clearTimeout(lazyloadThrottleTimeout);
+                function lazyload() {
+                    if (lazyloadThrottleTimeout) {
+                        clearTimeout(lazyloadThrottleTimeout);
+                    }
+
+                    lazyloadThrottleTimeout = setTimeout(function () {
+                        var scrollTop = window.pageYOffset;
+                        lazyloadImages.forEach(function (img) {
+                            if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                                img.src = img.dataset.src;
+                                img.classList.remove('lazy');
+                            }
+                        });
+                        if (lazyloadImages.length == 0) {
+                            document.removeEventListener("scroll", lazyload);
+                            window.removeEventListener("resize", lazyload);
+                            window.removeEventListener("orientationChange", lazyload);
+                        }
+                    }, 20);
                 }
 
-                lazyloadThrottleTimeout = setTimeout(function () {
-                    var scrollTop = window.pageYOffset;
-                    lazyloadImages.forEach(function (img) {
-                        if (img.offsetTop < (window.innerHeight + scrollTop)) {
-                            img.src = img.dataset.src;
-                            img.classList.remove('lazy');
-                        }
-                    });
-                    if (lazyloadImages.length == 0) {
-                        document.removeEventListener("scroll", lazyload);
-                        window.removeEventListener("resize", lazyload);
-                        window.removeEventListener("orientationChange", lazyload);
-                    }
-                }, 20);
-            }
-
-            document.addEventListener("scroll", lazyload);
-            window.addEventListener("resize", lazyload);
-            window.addEventListener("orientationChange", lazyload);
-        });
-    </script>
-</body>
-</html>
-```
+                document.addEventListener("scroll", lazyload);
+                window.addEventListener("resize", lazyload);
+                window.addEventListener("orientationChange", lazyload);
+            });
+        </script>
+    </body>
+    </html>
+    ```

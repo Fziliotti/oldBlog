@@ -5,7 +5,7 @@ title: "Javascript All"
 date: 2018-12-29 19:42:43
 image: '/assets/img/'
 description: 'Lista de assuntos interessantes de se estudar sobre javascript'
-main-class: 'js'
+main-class: 'dev'
 color:
 tags: ['Javascript', 'dicas']
 categories:

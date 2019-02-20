@@ -7,7 +7,7 @@ image: "/assets/img/"
 description: "O banco de dados transacional dos navegadores."
 main-class: 'dev'
 color:
-tags: ['dev']
+tags: ['dev','banco de dados']
 categories:
 twitter_text:
 introduction: "Aprenda sobre o banco de dados dos navegadores com Javascript!!"
@@ -121,5 +121,9 @@ Sem dúvidas o IndexedDB é uma API muito interessante e legal de aprender. Alé
 > [Tutorial completo da Google](https://developers.google.com/web/ilt/pwa/working-with-indexeddb)
 
 > [IndexedDB usando Promises, facilita muito!!](https://www.npmjs.com/package/idb)
+
+> [Biblioteca Dexie.js](https://dexie.org/)
+
+> [Biblioteca Db.js](http://aaronpowell.github.io/db.js/)
 
 Enfim, a minha ideia foi mostrar o código e funcionamento do IndexedDB na prática, mas é claro que o código procedural não é a melhor solução, podemos por exemplo definir as regras em uma FactoryDB em nosso projeto, e deixar mais organizado e legível.

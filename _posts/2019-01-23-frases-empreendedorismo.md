@@ -13,8 +13,7 @@ twitter_text:
 introduction: 'Conjunto de frases e pensamentos sobre o tema que foram adquiridas após leitura e visualização de vídeos'
 ---
 
-
-## Introdução
+# Introdução
 
 O intuito desse pequeno post é deixar um conjunto de frases e pensamentos que ja ouvi ou li nos últimos anos. Pode ser que alguma delas te afete positivamente e por isso resolvi postar para vocês. 😊
 
@@ -75,7 +74,31 @@ O intuito desse pequeno post é deixar um conjunto de frases e pensamentos que j
 54. Tente trocar o arrependimento pelo aprendizado, troque suas frases "Se eu tivesse feito isso" para "eu aprendi muito com isso, como por exemplo..."
 55. A palavra convence e o exemplo arrasta.
 56. Busque nunca se contentar no estado de platô, que é o momento onde você fica estagnado, na inércia, apesar dos estímulos, os resultados não aparecem mais. Foque em ser criativo e sempre executar suas ideias ou estudos.
+57. Geralmente o que é fácil para alguém hoje, algum dia foi difícil.
+58. Ser líder é basicamente ser guardião de princípios.
+59. Planeja, execute e revise. Esse é um simples ciclo que funciona para diversas áreas da vida, a ultima etapa é importante para aprimorar o que foi feito.
+60. "A maioria das pessoas associa dinheiro a prazer imediato. Para mim, ele deve ser acumulado para proporcionar liberdade"
+61. Para enriquecer, " Tudo	se	resume	ao	seguinte:	se	o	“modelo	financeiro”	que	existe	no	seu	subconsciente	não estiver	programado	para	o	sucesso,	nada	que	você	aprenda,	saiba	ou	faça	terá	grande importância. "
+62. "Se as coisas não estão indo como você	gostaria, isso quer dizer apenas que há algo que você não sabe"
+63. Pensar no curto prazo pode te desviar do rumo no momento em que surgir uma boa oportunidade aparente, ou quando as coisas ficarem ruim.
+64. Não é o que não sabemos que nos impede de vencer - o nosso maior obstáculo é justamente o que já sabemos.
+65. “Você se esquece daquilo que escuta; você se lembra daquilo que vê; você entende aquilo que faz.”
+66. A sua programação conduz aos seus pensamentos; os seus pensamentos conduzem aos seus sentimentos; os seus sentimentos conduzem às suas ações; as suas ações conduzem aos seus resultados. Ou então o condicionamento do seu subconsciente determina o seu pensamento. O seu pensamento determina as suas decisões e estas determinam as suas ações, que, finalmente, determinam os seus resultados.
+67. "Quando o subconsciente tem que optar entre a lógica e as emoções profundamente enraizadas, as emoções quase sempre vencem."
+68. Mesmo que você tenha todo o conhecimento e toda a qualificação do mundo, se o seu modelo não estiver programado para o sucesso, você estará condenado financeiramente.
+69. "As pessoas ignoram a saúde para trabalhar e depois precisam ignorar o trabalho para tratar de sua saúde"
+70. Águia não voa com pardal
+71. Pare de ficar olhando só para o resultado e o sucesso, analise a trajetório.
+72. O principal motivo que impede a maioria das pessoas de conseguir o que quer é não saber o que quer.
+73. Seja frequente. Só assim você será muito bom em alguma coisa. A grande maioria das coisas que você faz é porque você foi frequente naquilo. Invista tempo naquilo que não gosta que você verá que ficará melhor quando ter frequencia
+74. Busque conhecimento, busque aprender coisas novas, ler livros, saber muito sobre o tema. Desse modo você vai ganhar muitos Insights. E além disso, teste rápido, crie um protótipo rápido.
+75. As terapias ajudam a encontrar o seu propósito, você também encontra sua vocação ao descobrir seu verdadeiro propósito. 
+76. Na bifurcação é que o seu propósito vai te guiar no caminho certo.
+77. Cuidado com o medo, ele em excesso vira pânico e esse pânico te paralisa.
+78. Tenha um histórico de realização, que significa sempre terminando o que você se propõe. Tente sempre terminar os livros que começa a ler, terminar os projetos que se comprometeu.
 
-## Observações
+# Observações
+
+Eu basicamente escuto em vídeos ou das próprias pessoas, leio em livros, blogs, revistas e coloco aqui no blog. Em algum momento vou organizar os pensamentos e dar os devidos créditos às pessoas. 👍🤣
 
 Se você conhecer algum pensamento ou frase diferente ou quiser contribuir com alguma opinião ou acrescentar.. Comenta aí embaixo! 😃
