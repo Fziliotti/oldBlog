@@ -10,7 +10,7 @@ color:
 tags: ['dev','banco de dados']
 categories:
 twitter_text:
-introduction: "Aprenda sobre o banco de dados dos navegadores com Javascript!!"
+introduction: "Conheça o banco de dados dos navegadores, utilizando javascript!!"
 ---
 
 # Introdução
