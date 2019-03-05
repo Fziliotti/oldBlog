@@ -86,6 +86,7 @@ introduction: 'Conjunto de regras e técnicas que utilizo para melhorar a perfor
 17. **Web Fonts:** Estudar WebFonts e compreender o impacto que o carregamento de fontes tem em sua aplicação web.
     - Esse cara é muito fera e ja publicou diversos artigos sobre o tema, dê uma lida que vale a pena -> [site do Zach](https://www.zachleat.com/web/fonts/)
 18. **Lazy Load de Imagens:** Segundo um post de Rahul NanWani [aqui](https://imagekit.io/blog/lazy-loading-images-complete-guide/), "A ideia básica de carregamento lento é simples - adiar o carregamento de qualquer coisa que não seja necessária no momento. Para imagens, isso geralmente se traduz em qualquer imagem que não seja visível para o usuário na frente, pode ser carregada com preguiça. À medida que o usuário rola a página, os placeholders de imagem começam a entrar na viewport (parte visível da página da Web). Acionamos a carga dessas imagens quando elas se tornam visíveis."
+
     ```html
     <!DOCTYPE html>
     <html>
@@ -156,3 +157,25 @@ introduction: 'Conjunto de regras e técnicas que utilizo para melhorar a perfor
     </body>
     </html>
     ```
+
+19. **Conhecer os atributos defer e async da tag script**
+
+    Estudar WebFonts e compreender o impacto que o carregamento de fontes tem em sua aplicação web.
+
+    Se nenhum atributo estiver presente, o script será baixado e executado de forma síncrona e interromperá a análise do documento até que ele tenha terminado a execução (comportamento padrão). Scripts são baixados e executados na ordem em que são encontrados.
+
+    O atributo defer transfere o script enquanto o documento ainda está analisando, mas aguarda até que o documento termine a análise antes de executá-lo, equivalente à execução dentro de um ouvinte de evento DOMContentLoaded. adiar scripts será executado em ordem.
+
+    O atributo async faz o download do script durante a análise do documento, mas pausará o analisador para executar o script antes de concluir a análise. scripts assíncronos não serão necessariamente executados em ordem.
+
+    > os dois atributos só devem ser usados ​​se o script tiver um atributo src (ou seja, não um script in-line).
+
+    ```html
+    <script src="myscript.js"></script>
+    <script src="myscript.js" defer></script>
+    <script src="myscript.js" async></script>
+    ```
+
+# Conclusão
+
+Bom galera, essas foram as dicas que lembro de ter aplicado em projetos. Devem existir muitas outras, e assim que descobrir, irei adicionar mais dicas aqui nesse post. Obrigado pela leitura 👍😃
