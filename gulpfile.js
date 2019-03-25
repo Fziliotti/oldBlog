@@ -22,15 +22,9 @@ var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
  * Build the Jekyll Site
  */
  // spawn('jekyll.bat', ['build'])
-// gulp.task('jekyll-build', function (done) {
-// 	browserSync.notify(messages.jekyllBuild);
-// 	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
-// 		.on('close', done);
-// });
-
 gulp.task('jekyll-build', function (done) {
 	browserSync.notify(messages.jekyllBuild);
-	return cp.spawn('bundle', ['exec', 'jekyll build'], {stdio: 'inherit'})
+	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
 		.on('close', done);
 });
 
@@ -72,12 +66,13 @@ gulp.task('stylus', function(){
  * Javascript Task
  */
 gulp.task('js', function(){
-	return gulp.src((env.p) ? 'src/js/**/*.js' : ['src/js/**/*.js', '!src/js/analytics.js'])
+	return gulp.src('src/js/**/*.js')
 		.pipe(plumber())
-		.pipe(concat('main.js'))
+		.pipe(concat('blog.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('assets/js/'));
 });
+
 
 /**
  * Imagemin Task
