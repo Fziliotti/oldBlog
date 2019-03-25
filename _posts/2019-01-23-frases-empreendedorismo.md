@@ -1,47 +1,48 @@
 ---
 layout: post
 comments: true
-title: "Frases aleatórias sobre Empreendedorismo"
-date: 2019-01-23 06:00:27
-image: '/assets/img/'
-description: 'Conjunto de frases e pensamentos sobre o tema que foram adquiridas após leitura e visualização de vídeos'
-main-class: 'emp'
-color: 'emp'
-tags: 'emp'
-categories:
-twitter_text:
-introduction: 'Conjunto de frases e pensamentos sobre o tema que foram adquiridas após leitura e visualização de vídeos'
----
+title: Frases aleatórias sobre Empreendedorismo
+date: 2019-01-23 06:00:27 +0000
+image: "/assets/img/"
+description: Conjunto de frases e pensamentos sobre o tema que foram adquiridas após
+  leitura e visualização de vídeos
+main-class: emp
+color: emp
+tags: emp
+categories: 
+twitter_text: 
+introduction: Conjunto de frases e pensamentos sobre o tema que foram adquiridas após
+  leitura e visualização de vídeos
 
+---
 # Introdução
 
 O intuito desse pequeno post é deixar um conjunto de frases e pensamentos que ja ouvi ou li nos últimos anos. Pode ser que alguma delas te afete positivamente e por isso resolvi postar para vocês. 😊
 
-
-1. Identificar o propósito de vida ( Arriscar, dar varios tiros de revolver e um de bazuca no final)
-2. Esforço frequentemente tem maior impacto que o talento.
-3. Ter persistência é fundamental, para isso é necessário ser "escravo" de bons hábitos. Uma dica é trocar um hábito ruim por um bom
-4. Administre a si mesmo, para administrar outras empresas. 
-5. Arrumar a cama é o primeiro hábito e primeira vitória, mesmo que pequena, do seu dia.
-6. "Acho q se no geral as pessoas trocassem a inveja pela admiração, o sucesso do outro seria um convite para nossa superação".
-7. O sucesso está na caminhada e não no final.
-8. Uma grande qualidade e uma grande dificuldade atual é a paciência, ela pode ser fator fundamental para o sucesso.
-9. Acreditar é muito melhor que Achar. "Lei da atração"
+ 1. Identificar o propósito de vida ( Arriscar, dar vários tiros de revolver e um de bazuca no final)
+ 2. Esforço frequentemente tem maior impacto que o talento.
+ 3. Ter persistência é fundamental, para isso é necessário ser "escravo" de bons hábitos. Uma dica é trocar um hábito ruim por um bom
+ 4. Administre a si mesmo, para administrar outras empresas.
+ 5. Arrumar a cama é o primeiro hábito e primeira vitória, mesmo que pequena, do seu dia.
+ 6. "Acho q se no geral as pessoas trocassem a inveja pela admiração, o sucesso do outro seria um convite para nossa superação".
+ 7. O sucesso está na caminhada e não no final.
+ 8. Uma grande qualidade e uma grande dificuldade atual é a paciência, ela pode ser fator fundamental para o sucesso.
+ 9. Acreditar é muito melhor que Achar. "Lei da atração"
 10. Resiliência é uma capacidade fundamental dos fortes. Resiliência é capacidade que temos de sermos flexíveis em momentos que estamos frente a dificuldades ou adversidades. Essa flexibilidade é construída por meio de um conjunto de crenças que possibilitam transcender os empecilhos da vida e prosperar um futuro com superação.
 11. Crença no mérito. Duro na queda
 12. Seja ambicioso, mas não esqueça que a ganância não pode tomar sua ambição. O oposto de ambição é mediocridade.
 13. Você não tem que ter vergonha de mostrar que fez mais que a média.
 14. Se tem o doce, porque se contentar com o amargo.
 15. A segurança te deixa no sofazão da maldade.
-16. Não adianta você tem 50 coisas mais omenos. Basta uma coisa que seja grande pra você.
-17. Controlar o Medo é algo díficil mas fundamental. Não deixe ele tomar conta da sua vida.
-18. Dê all win naquilo que você quer pra sua vida. Viva apartir daquilo que você quer para a sua vida. Se escolheu um curso, mergulhe de cabeça.
+16. Não adianta você tem 50 coisas mais ou menos. Basta uma coisa que seja grande pra você.
+17. Controlar o Medo é algo difícil mas fundamental. Não deixe ele tomar conta da sua vida.
+18. Dê all win naquilo que você quer pra sua vida. Viva a partir daquilo que você quer para a sua vida. Se escolheu um curso, mergulhe de cabeça.
 19. A intuição é muito importante para a criatividade e fuga do senso comum.
 20. Os contextos precisam ser respeitados
-21. não permita que a opiniao alheia se torne a sua realidade
-22. Iniciativa, Continuar e finalizar são etapas fundamnetais. Começar e terminar é para poucos. Ter credibilidade é fechar ciclos
+21. não permita que a opinião alheia se torne a sua realidade
+22. Iniciativa, Continuar e finalizar são etapas fundamentais. Começar e terminar é para poucos. Ter credibilidade é fechar ciclos
 23. Não espere resultados diferentes tendo as mesmas atitudes.
-24. Ser competente é questão de fazer da melhor forma, pensando que sera do melhor jeito e fazer mais do que alguem espera que vc faça.
+24. Ser competente é questão de fazer da melhor forma, pensando que sera do melhor jeito e fazer mais do que alguém espera que vc faça.
 25. O presente que a gente compra mas não entrega nao serve em nada no quesito de valer algo para o presenteado.
 26. O legado é mais importante que a herança.
 27. Ser grato traz muito benefícios, dá forças para seguir caminhando. Gratidão por quem está perto, por quem se importa, pela vida.
@@ -59,7 +60,7 @@ O intuito desse pequeno post é deixar um conjunto de frases e pensamentos que j
 39. Ser compulsivo por crescimento, contribuição com outras vidas, isso será sinônimo de sucesso.
 40. Sozinho você pode até ir mais rápido, mas acompanhado você vai mais longe e até tem chance de conhecer lugares muito diferentes que não teria acesso sem a sua companhia.
 41. Sucesso sem felicidade é fracasso.
-42. Se tirar o cifrão($) do olho ele vai para o bolso. Faça por amor no trabalho, amor em fazer diferença no mundo. 
+42. Se tirar o cifrão($) do olho ele vai para o bolso. Faça por amor no trabalho, amor em fazer diferença no mundo.
 43. Empreender é remunerar sua paixão.
 44. Tem gente que prefere viver certo do que ser feliz.
 45. O sucesso exige mais, se fosse fácil, todos fariam.
@@ -92,7 +93,7 @@ O intuito desse pequeno post é deixar um conjunto de frases e pensamentos que j
 72. O principal motivo que impede a maioria das pessoas de conseguir o que quer é não saber o que quer.
 73. Seja frequente. Só assim você será muito bom em alguma coisa. A grande maioria das coisas que você faz é porque você foi frequente naquilo. Invista tempo naquilo que não gosta que você verá que ficará melhor quando ter frequencia
 74. Busque conhecimento, busque aprender coisas novas, ler livros, saber muito sobre o tema. Desse modo você vai ganhar muitos Insights. E além disso, teste rápido, crie um protótipo rápido.
-75. As terapias ajudam a encontrar o seu propósito, você também encontra sua vocação ao descobrir seu verdadeiro propósito. 
+75. As terapias ajudam a encontrar o seu propósito, você também encontra sua vocação ao descobrir seu verdadeiro propósito.
 76. Na bifurcação é que o seu propósito vai te guiar no caminho certo.
 77. Cuidado com o medo, ele em excesso vira pânico e esse pânico te paralisa.
 78. Tenha um histórico de realização, que significa sempre terminando o que você se propõe. Tente sempre terminar os livros que começa a ler, terminar os projetos que se comprometeu.
