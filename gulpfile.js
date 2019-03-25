@@ -22,9 +22,15 @@ var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
  * Build the Jekyll Site
  */
  // spawn('jekyll.bat', ['build'])
+// gulp.task('jekyll-build', function (done) {
+// 	browserSync.notify(messages.jekyllBuild);
+// 	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
+// 		.on('close', done);
+// });
+
 gulp.task('jekyll-build', function (done) {
 	browserSync.notify(messages.jekyllBuild);
-	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
+	return cp.spawn('bundle', ['exec', 'jekyll build'], {stdio: 'inherit'})
 		.on('close', done);
 });
 
