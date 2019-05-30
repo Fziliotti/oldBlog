@@ -1,18 +1,18 @@
 ---
 layout: post
 comments: true
-title: "Resumo do curso FAST MBA"
-date: 2018-11-06 03:08:00
-image: '/assets/img/'
-description: 'Principais conceitos e dicas que aprendi fazendo o curso Fast MBA'
-main-class: 'emp'
-color: 'emp'
-tags: 'emp'
+title: Resumo do curso FAST MBA
+date: 2018-11-06T03:08:00.000+00:00
+image: "/assets/img/"
+description: Principais conceitos e dicas que aprendi fazendo o curso Fast MBA
+main-class: emp
+color: emp
+tags: emp
 categories: 
-twitter_text:
-introduction: 'Principais conceitos e dicas que aprendi fazendo o curso Fast MBA'
----
+twitter_text: 
+introduction: Principais conceitos e dicas que aprendi fazendo o curso Fast MBA
 
+---
 ## Introdução
 
 <!-- criar um link[Performance Web](https://willianjusten.com.br/series/#performance-web),  -->
