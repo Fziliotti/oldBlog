@@ -1,18 +1,20 @@
 ---
 layout: post
 comments: true
-title: "Javascript All"
-date: 2018-12-29 19:42:43
-image: '/assets/img/'
-description: 'Lista de assuntos interessantes de se estudar sobre javascript'
-main-class: 'dev'
-color:
-tags: ['Javascript', 'dicas']
-categories:
-twitter_text:
-introduction: 'Dicas, Referências e Exemplos sobre Javascript'
----
+title: Javascript All
+date: 2018-12-29T19:42:43.000+00:00
+image: "/assets/img/"
+description: Lista de assuntos interessantes de se estudar sobre javascript
+main-class: dev
+color: 
+tags:
+- Javascript
+- dicas
+categories: 
+twitter_text: 
+introduction: Dicas, Referências e Exemplos sobre Javascript
 
+---
 # Motivação
 
 Bom, primeiramente queria agradecer aos amigos que me incentivaram a criar esse post. Achei uma ideia legal comentar alguns temas sobre Javascript que são interessantes e bons de se estudar.
