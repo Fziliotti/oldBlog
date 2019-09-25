@@ -15,10 +15,13 @@ twitter_text:
 introduction: Alguns snippets que uso durante meus estudos e desenvolvimento de PWA's.
 
 ---
-# Snippets interessantes para implementação de uma PWA
+## Snippets interessantes para implementação de uma PWA
 
+A ideia desse post é reunir alguns exemplos de uso recorrente ao se trabalhar com PWA's, além de servir como base para futuros estudos mais aprofundados sobre o tema e referências que eu acho interessantes.
 
-## Exemplo de um arquivo Manifesto de seu PWA
+----------
+
+### Exemplo de um arquivo Manifesto de seu PWA
 
 ```json
 {
@@ -57,7 +60,7 @@ Se quiser entender melhor ou conhecer mais configurações que podem ser colocad
 
 ----------
 
-## Instalação do service worker e verificação do suporte do browser:
+### Instalação do service worker e verificação do suporte do browser:
 
 ```js
 if ("serviceWorker" in navigator) {
@@ -86,7 +89,15 @@ if ('serviceWorker' in navigator) {
 
 ----------
 
-## Criação de um botão de instalação do APP
+### Criação de um botão de instalação do APP
+
+Antes do script, você vai precisar de um botão no seu arquivo html
+
+```html
+	<button class="add-button">Instalar o APP</button>
+```
+
+Agora a *magia* do javascript:
 
 ```js
 let deferredPrompt;
@@ -129,7 +140,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 ----------
 
-## Envio de notificação push pelo próprio cliente
+### Envio de notificação push pelo próprio cliente
 
 ```js
 Notification.requestPermission(function (status) {
@@ -189,7 +200,7 @@ Na maioria dos casos você vai precisar configurar uma forma de enviar as notifi
 
 ----------
 
-## Uso do IndexedDB usando a biblioteca Dexie
+### Uso do IndexedDB usando a biblioteca Dexie
 
 ```js
 import Dexie from 'dexie';
@@ -215,11 +226,17 @@ db.transaction('rw', db.friends, async() => {
     console.error(e.stack || e);
 });
 ```
-> Para mais informações, o site da [Dexie](https://dexie.org/docs/) oferece uma documentação bem legal =)
+Para mais informações, o site da [Dexie](https://dexie.org/docs/) oferece uma documentação bem legal =)
 
+> É importante lembrar que o armazenamento utilizando LocalStorage, SessionStorage ou através de cookies são síncronos, não são compatíveis com web workers e possuem limitações de tamanho e tipo (somente strings).
+
+> É preferível utilizar o IndexedDB por exemplo atrelado aos web workers ou service worker, uma vez que sua API é assincrona e não irá bloquer o Document Object Model (DOM), dessa forma maximizando a interoperabilidade com a IU.  
+
+Para entender mais sobre os bancos de dados dos navegadores, aqui vão alguns links legais:
+- [Comparação dos bancos de dados](http://nolanlawson.github.io/database-comparison/)
 ----------
 
-## Snippet rápido para usar o Workbox
+### Snippet rápido para usar o Workbox
 
 ```js
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
@@ -311,8 +328,42 @@ workbox.routing.setCatchHandler(({event}) => {
 
 ----------
 
+### Uma forma de criar um arquivo Manifest dinâmico com vanilla javascript
 
-## Conclusão
+```js
+const meuManifestDinamico = {
+  "name": "Nome do aplicativo",
+  "short_name": "APP name",
+  "theme_color": "#5bd1d7",
+  "background_color": "#f6f5f5",
+  "display": "standalone",
+  "start_url": window.location.href,
+  "icons": [
+    {
+      "src": `${window.location.origin}/imgs/android-chrome-192x192.png`,
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": `${window.location.origin}/imgs/android-chrome-512x512.png`,
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}
+const stringManifest = JSON.stringify(meuManifestDinamico);
+const blob = new Blob([stringManifest], {type: 'application/json'});
+const manifestURL = URL.createObjectURL(blob);
+document.querySelector('#manifest').setAttribute('href', manifestURL);
+			
+```
+> Esse snippet é útil para a criação de um manifest dinâmico, que possui o start URL baseado no endereço corrente do navegador.
+
+> Definição de blob: Um objeto **Blob** representa um objeto do tipo arquivo, com  dados brutos imutáveis. Blobs representam dados que não estão necessariamente em um formato JavaScript nativo. O único jeito de ler o conteúdo de um Blob é usando FileReader.
+
+
+### Conclusão
 
 Bom, a ideia desse post é apenas reunir alguns snippets que geralmente faço uso na construção de PWA's e ajudar quem talvez precise.
 
