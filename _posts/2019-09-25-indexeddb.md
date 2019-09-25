@@ -125,6 +125,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 ```
 
+> As versões anteriores ao Chrome 67 disparavam um prompt padrão no final da página.
+
 ----------
 
 ## Envio de notificação push pelo próprio cliente
@@ -181,9 +183,9 @@ self.addEventListener('notificationclick', function(e) {
 
 > Certifique-se que o service worker foi instalado corretamente para esse snippet funcionar.
 
-> Se quiser aprofundar os conhecimentos na API de Notificação, dá uma olhada nessa [postagem do Vladislav Stepanov](https://codeburst.io/understanding-the-notification-api-804fb5c1ae9c)
+Se quiser aprofundar os conhecimentos na API de Notificação, dá uma olhada nessa [postagem do Vladislav Stepanov](https://codeburst.io/understanding-the-notification-api-804fb5c1ae9c)
 
-> Na maioria dos casos você vai precisar configurar uma forma de enviar as notificações de forma dinâmica pelo servidor, para isso você pode estudar o [Google Cloud Messaging](https://firebase.google.com/docs/cloud-messaging?hl=pt-br)
+Na maioria dos casos você vai precisar configurar uma forma de enviar as notificações de forma dinâmica pelo servidor, para isso você pode estudar o [Google Cloud Messaging](https://firebase.google.com/docs/cloud-messaging?hl=pt-br)
 
 ----------
 
@@ -213,10 +215,11 @@ db.transaction('rw', db.friends, async() => {
     console.error(e.stack || e);
 });
 ```
+> Para mais informações, o site da [Dexie](https://dexie.org/docs/) oferece uma documentação bem legal =)
 
 ----------
 
-## Snippet rápido para usar a biblioteca [Workbox](https://developers.google.com/web/tools/workbox/)
+## Snippet rápido para usar o Workbox
 
 ```js
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
@@ -303,6 +306,8 @@ workbox.routing.setCatchHandler(({event}) => {
 });
 
 ```
+
+> Para mais informações, dá uma olhada no site do [Workbox](https://developers.google.com/web/tools/workbox/)
 
 ----------
 
