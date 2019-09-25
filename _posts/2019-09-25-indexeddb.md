@@ -232,8 +232,9 @@ Para mais informações, o site da [Dexie](https://dexie.org/docs/) oferece uma 
 
 > É preferível utilizar o IndexedDB por exemplo atrelado aos web workers ou service worker, uma vez que sua API é assincrona e não irá bloquer o Document Object Model (DOM), dessa forma maximizando a interoperabilidade com a IU.  
 
-Para entender mais sobre os bancos de dados dos navegadores, aqui vão alguns links legais:
-- [Comparação dos bancos de dados](http://nolanlawson.github.io/database-comparison/)
+Para entender mais sobre os bancos de dados dos navegadores (WebStorage, IndexedDB e LocalStorage), dá uma olhada nesse site de
+[Comparação dos bancos de dados](http://nolanlawson.github.io/database-comparison/)
+
 ----------
 
 ### Snippet rápido para usar o Workbox
@@ -365,7 +366,7 @@ document.querySelector('#manifest').setAttribute('href', manifestURL);
 
 ### Conclusão
 
-Bom, a ideia desse post é apenas reunir alguns snippets que geralmente faço uso na construção de PWA's e ajudar quem talvez precise.
+Bom, a ideia desse post é apenas reunir alguns snippets que geralmente utilizo ou já utilizei para a construção de PWA's.. Espero ajudar quem talvez precise e esteja estudando essa beleza.
 
 Para quem não conhece muito sobre PWA's e quer entender melhor como funciona essa belezinha, pode me chamar nas redes sociais ou também dar uma olhada nos slides do minicurso que apresentei na FACOM Techweek 2019, presente no [site do minicurso](https://fziliotti.github.io/minicursopwa/).
 
