@@ -1,0 +1,40 @@
+---
+label: BlogPost
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: boolean
+  name: comments
+  label: comments
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: image
+  label: image
+- type: text
+  name: description
+  label: description
+- type: text
+  name: main-class
+  label: main-class
+- type: text
+  name: color
+  label: color
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: categories
+  label: categories
+- type: text
+  name: twitter_text
+  label: twitter_text
+- type: text
+  name: introduction
+  label: introduction
