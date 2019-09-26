@@ -55,9 +55,9 @@ A ideia desse post é reunir alguns exemplos de uso recorrente ao se trabalhar c
 }
 ```
 
-Com o arquivo acima, você ja consegue instalar um aplicativo com a splash screen personalizada de acordo com as informações dentro desse arquivo json.
+Com o arquivo acima, o robô do google já consegue identificar que o seu site se trata de um app instalável, com a splashscreen personalizada de acordo com as informações dentro desse arquivo json, além de outras informações que norteam a instalação e comportamento do seu WebApp.
 
-Se quiser entender melhor ou conhecer mais configurações que podem ser colocadas tem a [Referência do manifest Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/Manifest).
+Se quiser entender melhor ou conhecer mais configurações que podem ser colocadas nesse arquivo, depois da uma olhada na [Referência do manifest segundo a Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/Manifest).
 
 ----------
 
@@ -87,6 +87,8 @@ if ('serviceWorker' in navigator) {
 ```
 
 > Você deve ter um arquivo do service worker na pasta do seu site e especificar o caminho correto ao invés de './sw.js'
+
+> Para quem não sabe o que é um service worker, é basicamente um script que roda em background, separado da thread principal do seu browser(para não afetar a renderização e atrapalhar a experiência do usuário). Ele consegue interceptar as requisições feitas pelo browser, escutar eventos de notificações e varias outras coisas interessantes.
 
 ----------
 
@@ -201,13 +203,14 @@ Na maioria dos casos você vai precisar configurar uma forma de enviar as notifi
 
 ----------
 
-### Uso do IndexedDB usando a biblioteca Dexie
+### Uso do IndexedDB usando bibliotecas
+
+Dexie é uma biblioteca pra facilitar o uso do IndexedDB, a api nativa dele é bem verbosa e as vezes pode ser confusa para quem está no início, além disso, a biblioteca ja realiza o processo de configurar o fallback quando o navegador não tem suporte ao IndexedDB (geralmente usando o localstorage) =).
 
 ```js
 import Dexie from 'dexie';
 
 // Instanciando a classe Dexie responsável pelo IndexedDB
-
 const db = new Dexie("FriendDatabase");
 
 db.version(1).stores({ friends: "++id,name,age" });
@@ -227,7 +230,45 @@ db.transaction('rw', db.friends, async() => {
     console.error(e.stack || e);
 });
 ```
-Para mais informações, o site da [Dexie](https://dexie.org/docs/) oferece uma documentação bem legal =)
+
+Você também pode usar a biblioteca LocalForage que é muito parecida com a utilização do localStorage, entregando o mesmo valor da biblioteca Dexie e até com mais funcionalidades. Lembrando que ela implementa o uso de [promises](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise), mas se você quiser continuar com o uso de callbacks para a realização do processamento assíncrono, também é possível.
+
+```js
+// Renomeando o banco de dados
+localforage.config({
+    name: 'NovoNomeAqui',
+    description: 'Uma descrição para ajudar os desenvolvedores'
+});
+
+// Alterando a ordem dos drivers utilizados, quando der erro ou não ser possível utilizar um dos tipos de banco de dados
+localforage.config({
+    driver: [localforage.WEBSQL,
+             localforage.INDEXEDDB,
+             localforage.LOCALSTORAGE],
+    name: 'WebSQL-Rox'
+});
+
+// Você pode adicionar tipos que não sejam strings, diferente do localStorage.
+localforage.setItem('my array', [1, 2, 'three']).then(function(value) {
+    console.log(value[0]); // saída: 1
+}).catch(function(err) {
+    console.log(err);
+});
+
+// Versão da função de acessar um elemento usando Promise
+localforage.getItem('somekey').then(function(value) {
+    console.log(value);
+}).catch(function(err) {
+    console.log(err);
+});
+
+// Versão da função de acessar um elemento usando callback
+localforage.getItem('somekey', function(err, value) {
+    console.log(value);
+});
+
+```
+Para mais informações, o site da [Dexie](https://dexie.org/docs/) e do [LocalForage](https://localforage.github.io/localForage/) oferecem uma documentação bem completa e interessante =)
 
 > É importante lembrar que o armazenamento utilizando LocalStorage, SessionStorage ou através de cookies são síncronos, não são compatíveis com web workers e possuem limitações de tamanho e tipo (somente strings).
 
@@ -239,6 +280,12 @@ Para entender mais sobre os bancos de dados dos navegadores (WebStorage, Indexed
 ----------
 
 ### Snippet rápido para usar o Workbox
+
+> Workbox é um conjunto de bibliotecas e módulos Node que facilitam o armazenamento em cache de ativos e aproveitam ao máximo os recursos usados para criar Progressive Web Apps.
+
+Geralmente pra configurar o service worker utilizando as funções nativas, é necessário detalhar bem o ciclo de vida dele (eventos install, activate e principalmente o fetch que intercepta as Requests do browser).
+E esse código geralmente se repete muito na construção de PWA's além de alguns serem um pouco complexos.
+O Workbox meio que abstrai isso tudo e deixa bem mais amigável para o desenvolvedor por exemplo configurar as estratégias de cache e outras coisas mostradas no snippet abaixo.
 
 ```js
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
