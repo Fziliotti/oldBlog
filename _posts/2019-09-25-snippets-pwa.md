@@ -281,7 +281,7 @@ Para entender mais sobre os bancos de dados dos navegadores (WebStorage, Indexed
 
 ### Snippet rápido para usar o Workbox
 
-> Workbox é um conjunto de bibliotecas e módulos Node que facilitam o armazenamento em cache de ativos e aproveitam ao máximo os recursos usados para criar Progressive Web Apps.
+> Workbox é um conjunto de bibliotecas e módulos Node que facilitam o armazenamento em cache dos assets e aproveitar ao máximo os recursos usados para criar Progressive Web Apps.
 
 Geralmente pra configurar o service worker utilizando as funções nativas, é necessário detalhar bem o ciclo de vida dele (eventos install, activate e principalmente o fetch que intercepta as Requests do browser).
 E esse código geralmente se repete muito na construção de PWA's além de alguns serem um pouco complexos.
