@@ -203,9 +203,9 @@ Na maioria dos casos você vai precisar configurar uma forma de enviar as notifi
 
 ----------
 
-### Uso do IndexedDB usando bibliotecas
+### Uso do IndexedDB através de bibliotecas
 
-Dexie é uma biblioteca pra facilitar o uso do IndexedDB, a api nativa dele é bem verbosa e as vezes pode ser confusa para quem está no início, além disso, a biblioteca ja realiza o processo de configurar o fallback quando o navegador não tem suporte ao IndexedDB (geralmente usando o localstorage) =).
+Dexie é uma biblioteca pra facilitar o uso do IndexedDB, a api nativa do IDB é bem verbosa e as vezes pode ser confusa para quem está no início, além disso, a bibliotec da Dexie já realiza o processo de configurar o fallback quando o navegador não tem suporte ao IndexedDB (geralmente usando o localstorage) =).
 
 ```js
 import Dexie from 'dexie';
@@ -281,11 +281,42 @@ Para entender mais sobre os bancos de dados dos navegadores (WebStorage, Indexed
 
 ### Snippet rápido para usar o Workbox
 
+Geralmente para configurar o service worker utilizando as funções nativas, é necessário detalhar bem o ciclo de vida dele, como os eventos **install**, **activate** e principalmente o **fetch** que intercepta as requisições feitas pelo browser).
+
+E esse código geralmente se repete muito na construção de PWA's além de alguns serem um pouco complexos.
+
 > Workbox é um conjunto de bibliotecas e módulos Node que facilitam o armazenamento em cache dos assets e aproveitar ao máximo os recursos usados para criar Progressive Web Apps.
 
-Geralmente pra configurar o service worker utilizando as funções nativas, é necessário detalhar bem o ciclo de vida dele (eventos install, activate e principalmente o fetch que intercepta as Requests do browser).
-E esse código geralmente se repete muito na construção de PWA's além de alguns serem um pouco complexos.
-O Workbox meio que abstrai isso tudo e deixa bem mais amigável para o desenvolvedor por exemplo configurar as estratégias de cache e outras coisas mostradas no snippet abaixo.
+
+O Workbox vai abstrair bastante coisa para deixar mais amigável para o desenvolvedor. Como pode ser mostrado abaixo:
+
+```js
+// Configuração para implementar a estratégia de cache 'staleWhileRevalidate' sem uso de Workbox
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.put('meu-cache').then(cache => {
+      return catch.match(event.request).then(cacheResponse => {
+        const fetchPromise = fetch(event.request).then(networkResponse => {
+          catch.put(event.request, networkResponse.clone());
+          return networkResponse;
+        });
+        return cacheResponse || fetchPromise;
+      });
+    });
+  );
+});
+
+// Com uso de workbox =)
+workboxSW.strategies.staleWhileRevalidate({
+  cacheName: 'meu-cache',
+  cacheExpiration: {
+    maxAgeInSeconds: 60 * 30 //Configuração da expiração do cache em 30min
+  }
+});
+
+```
+
+Abaixo você pode ver uma configuração mais completa e genérica para as aplicações
 
 ```js
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
@@ -308,7 +339,7 @@ workbox.routing.registerRoute(
   })
 );
 
-//Cacheando os recursos estáticos, alternativa aos dois de cima
+// Cacheando os recursos estáticos, alternativa aos dois de cima
 workbox.routing.registerRoute(
   /\.(?:js|css)$/,
   new workbox.strategies.StaleWhileRevalidate({
@@ -334,11 +365,11 @@ workbox.routing.registerRoute(
   })
 );
 
-//Habilitar o Google Analytics mesmo offline
+// Habilitar o Google Analytics mesmo offline
 workbox.googleAnalytics.initialize();
 
 
-//Cacheamento das fontes do site usando o googleapi
+// Cacheamento das fontes do site usando o googleapi
 workbox.routing.registerRoute(
   /^https:\/\/fonts\.googleapis\.com/,
   new workbox.strategies.StaleWhileRevalidate({
@@ -346,9 +377,19 @@ workbox.routing.registerRoute(
   })
 );
 
+// Cacheamento de uma determinada requisição GET passando o caminho dentro da ReGexp
+workbox.routing.registerRoute(
+    new RegExp('https://newsapi.org/v2/top-headlines'),
+    workbox.strategies.staleWhileRevalidate({
+        cacheName: 'cache-noticias',
+        cacheExpiration: {
+            maxAgeSeconds: 60 * 30 
+        }
+    })
+);
+
+
 // Adicionando um fallback para requisições não atendidas 
-
-
 workbox.routing.setCatchHandler(({event}) => {
  
   // https://medium.com/dev-channel/service-worker-caching-strategies-based-on-request-types-57411dd7652c
@@ -379,14 +420,20 @@ workbox.routing.setCatchHandler(({event}) => {
 
 ### Uma forma de criar um arquivo Manifest dinâmico com vanilla javascript
 
+No html você precisa identificar o link do manifest:
+
+```html
+<link rel="manifest" id="manifest">
+```
+
+Criando o manifest dinâmico:
 ```js
 const meuManifestDinamico = {
   "name": "Nome do aplicativo",
   "short_name": "APP name",
-  "theme_color": "#5bd1d7",
-  "background_color": "#f6f5f5",
+  "theme_color": "#555555",
+  "background_color": "#ffffff",
   "display": "standalone",
-  "start_url": window.location.href,
   "icons": [
     {
       "src": `${window.location.origin}/imgs/android-chrome-192x192.png`,
@@ -399,11 +446,12 @@ const meuManifestDinamico = {
       "type": "image/png"
     }
   ],
-  "splash_pages": null
+  "splash_pages": null,
+  "start_url": window.location.href,
 }
 const stringManifest = JSON.stringify(meuManifestDinamico);
-const blob = new Blob([stringManifest], {type: 'application/json'});
-const manifestURL = URL.createObjectURL(blob);
+const manifestBlob = new Blob([stringManifest], {type: 'application/json'});
+const manifestURL = URL.createObjectURL(manifestBlob);
 document.querySelector('#manifest').setAttribute('href', manifestURL);
 			
 ```
