@@ -16,13 +16,13 @@ introduction: Principais snippets e referências que você precisa para começar
   sua PWA.
 
 ---
-## Snippets interessantes para implementação de uma PWA
+## Introdução
 
-A ideia desse post é reunir alguns exemplos de uso recorrente ao se trabalhar com PWA's, além de servir como base para futuros estudos mais aprofundados sobre o tema e referências que eu acho interessantes.
+A ideia desse post é reunir alguns exemplos de uso que são frequentes ao se trabalhar com PWA's, além de servir como base para estudos mais aprofundados sobre o tema além de referências que eu particularmente acredito que são interessantes.
 
-----------
+***
 
-### Exemplo de um arquivo Manifesto de seu PWA
+### Exemplo de um arquivo manifesto de uma PWA genérica
 
 ```json
 {
@@ -30,8 +30,8 @@ A ideia desse post é reunir alguns exemplos de uso recorrente ao se trabalhar c
   "name": "Aplicativo",
   "short_name": "APP",
   "display": "standalone",
-  "background_color": "#666",
-  "theme_color": "#0f1419",
+  "background_color": "#666666",
+  "theme_color": "#ffffff",
   "description": "Essa é a descrição! =)",
   "orientation": "portrait",
   "icons": [
@@ -59,9 +59,13 @@ Com o arquivo acima, o robô do google já consegue identificar que o seu site s
 
 Se quiser entender melhor ou conhecer mais configurações que podem ser colocadas nesse arquivo, depois da uma olhada na [Referência do manifest segundo a Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/Manifest).
 
-----------
+***
 
 ### Instalação do service worker e verificação do suporte do browser:
+
+Esse snippet é essencial pois verifica se o navegador suporta o service worker, em caso de sucesso, o script de configuração será usado para a instalação dele em background.
+
+> Para verificar quais navegadores suportam essa tecnologia, existe esse [site](https://jakearchibald.github.io/isserviceworkerready/) muito útil do Jake Archibald, um dos 
 
 ```js
 if ("serviceWorker" in navigator) {
@@ -90,7 +94,7 @@ if ('serviceWorker' in navigator) {
 
 > Para quem não sabe o que é um service worker, é basicamente um script que roda em background, separado da thread principal do seu browser(para não afetar a renderização e atrapalhar a experiência do usuário). Ele consegue interceptar as requisições feitas pelo browser, escutar eventos de notificações e varias outras coisas interessantes.
 
-----------
+***
 
 ### Criação de um botão de instalação do APP
 
@@ -100,7 +104,7 @@ Antes do script, você vai precisar de um botão no seu arquivo html
 	<button class="add-button">Instalar o APP</button>
 ```
 
-Agora a *magia* do javascript:
+Agora a _magia_ do javascript:
 
 ```js
 let deferredPrompt;
@@ -141,7 +145,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 > As versões anteriores ao Chrome 67 disparavam um prompt padrão no final da página.
 
-----------
+***
 
 ### Envio de notificação push pelo próprio cliente
 
@@ -201,7 +205,7 @@ Se quiser aprofundar os conhecimentos na API de Notificação, dá uma olhada ne
 
 Na maioria dos casos você vai precisar configurar uma forma de enviar as notificações de forma dinâmica pelo servidor, para isso você pode estudar o [Google Cloud Messaging](https://firebase.google.com/docs/cloud-messaging?hl=pt-br)
 
-----------
+***
 
 ### Uso do IndexedDB através de bibliotecas
 
@@ -266,18 +270,18 @@ localforage.getItem('somekey').then(function(value) {
 localforage.getItem('somekey', function(err, value) {
     console.log(value);
 });
-
 ```
+
 Para mais informações, o site da [Dexie](https://dexie.org/docs/) e do [LocalForage](https://localforage.github.io/localForage/) oferecem uma documentação bem completa e interessante =)
 
 > É importante lembrar que o armazenamento utilizando LocalStorage, SessionStorage ou através de cookies são síncronos, não são compatíveis com web workers e possuem limitações de tamanho e tipo (somente strings).
 
-> É preferível utilizar o IndexedDB por exemplo atrelado aos web workers ou service worker, uma vez que sua API é assincrona e não irá bloquer o Document Object Model (DOM), dessa forma maximizando a interoperabilidade com a IU.  
+> É preferível utilizar o IndexedDB por exemplo atrelado aos web workers ou service worker, uma vez que sua API é assincrona e não irá bloquer o Document Object Model (DOM), dessa forma maximizando a interoperabilidade com a IU.
 
 Para entender mais sobre os bancos de dados dos navegadores (WebStorage, IndexedDB e LocalStorage), dá uma olhada nesse site de
 [Comparação dos bancos de dados](http://nolanlawson.github.io/database-comparison/)
 
-----------
+***
 
 ### Snippet rápido para usar o Workbox
 
@@ -286,7 +290,6 @@ Geralmente para configurar o service worker utilizando as funções nativas, é 
 E esse código geralmente se repete muito na construção de PWA's além de alguns serem um pouco complexos.
 
 > Workbox é um conjunto de bibliotecas e módulos Node que facilitam o armazenamento em cache dos assets e aproveitar ao máximo os recursos usados para criar Progressive Web Apps.
-
 
 O Workbox vai abstrair bastante coisa para deixar mais amigável para o desenvolvedor. Como pode ser mostrado abaixo:
 
@@ -313,7 +316,6 @@ workboxSW.strategies.staleWhileRevalidate({
     maxAgeInSeconds: 60 * 30 //Configuração da expiração do cache em 30min
   }
 });
-
 ```
 
 Abaixo você pode ver uma configuração mais completa e genérica para as aplicações
@@ -411,12 +413,11 @@ workbox.routing.setCatchHandler(({event}) => {
       return Response.error();
   }
 });
-
 ```
 
 > Para mais informações, dá uma olhada no site do [Workbox](https://developers.google.com/web/tools/workbox/)
 
-----------
+***
 
 ### Uma forma de criar um arquivo Manifest dinâmico com vanilla javascript
 
@@ -427,6 +428,7 @@ No html você precisa identificar o link do manifest:
 ```
 
 Criando o manifest dinâmico:
+
 ```js
 const meuManifestDinamico = {
   "name": "Nome do aplicativo",
@@ -455,10 +457,10 @@ const manifestURL = URL.createObjectURL(manifestBlob);
 document.querySelector('#manifest').setAttribute('href', manifestURL);
 			
 ```
+
 > Esse snippet é útil para a criação de um manifest dinâmico, que possui o start URL baseado no endereço corrente do navegador.
 
 > Definição de blob: Um objeto **Blob** representa um objeto do tipo arquivo, com  dados brutos imutáveis. Blobs representam dados que não estão necessariamente em um formato JavaScript nativo. O único jeito de ler o conteúdo de um Blob é usando FileReader.
-
 
 ### Conclusão
 
