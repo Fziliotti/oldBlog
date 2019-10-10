@@ -39,4 +39,5 @@ fields:
   name: introduction
   label: introduction
 pages:
+- _posts/navegação-web-entendendo-o-básico.md
 - _posts/snippets-pwa.md
