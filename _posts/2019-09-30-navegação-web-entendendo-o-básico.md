@@ -1,5 +1,5 @@
 ---
-layout: theme
+layout: post
 comments: true
 title: Visão geral da navegação na internet
 date: 2019-10-10 00:00:00 -0300
