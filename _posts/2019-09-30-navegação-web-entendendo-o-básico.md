@@ -5,12 +5,14 @@ title: Visão geral da navegação na internet
 date: 2019-10-10 00:00:00 -0300
 image: ''
 description: Visão geral do processo de navegação na internet utilizando o navegador
-main-class: ''
+main-class: comp
 color: ''
-tags: []
+tags:
+- dev
+- computação
 categories: ''
 twitter_text: ''
-introduction: ''
+introduction: Entendo o processo de navegação na internet utilizando o navegador
 
 ---
 ## Introdução
