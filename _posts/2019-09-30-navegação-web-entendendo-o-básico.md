@@ -1,10 +1,10 @@
 ---
 layout: theme
 comments: true
-title: Navegação web, entendendo o básico.
-date: 2019-09-30 00:00:00 -0300
+title: Visão geral da navegação na internet
+date: 2019-10-10 00:00:00 -0300
 image: ''
-description: ''
+description: Visão geral do processo de navegação na internet utilizando o navegador
 main-class: ''
 color: ''
 tags: []
