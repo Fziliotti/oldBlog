@@ -1,9 +1,11 @@
-## Blog Fziliotti - [Link Site](https://fziliotti.github.io/BlogFziliotti/)
+## Blog Fziliotti - OLD
 
-Esse é meu blog pessoal que ainda está em desenvolvimento.
+### o novo está em disponível agora em [Link Site](https://fziliotti.github.io/BlogFziliotti/)
+
+Esse é meu blog pessoal antigo..
 
 
-### O que está sendo estudado e utilizado:
+### O que o blog utilizava:
 
 - HTML5 e CSS3
 - Gulp
@@ -16,8 +18,3 @@ Esse é meu blog pessoal que ainda está em desenvolvimento.
 - Páginas de Series 
 - Páginas Sobre Mim
 
-### Ainda falta:
-
-- Criar novos temas da página inicial 
-- Melhorar a Usabilidade dos cards
-- Ajustar script para criação de posts
